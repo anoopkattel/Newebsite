@@ -754,6 +754,17 @@
             line-height: 1;
         }
 
+        /* Mobile Profile Image */
+        .mobile-profile-img {
+            display: none;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: var(--shadow);
+            margin: 2rem auto;
+        }
+
         /* Responsive */
         @media (max-width: 992px) {
             .hero {
@@ -830,8 +841,11 @@
             }
 
             .profile-img {
-                width: 250px;
-                height: 250px;
+                display: none;
+            }
+
+            .mobile-profile-img {
+                display: block;
             }
 
             .contact-buttons {
@@ -872,6 +886,10 @@ including client ledger maintenance, bookkeeping, accounts payable and receivabl
 I also play an active role in TTR reporting through goAML and support due diligence efforts to uphold strong compliance with regulatory standards.
  Pursuing the ACCA Strategic Professional Level, I am deepening my expertise in accounting, financial analysis, and capital markets, 
 with a focus on accuracy, integrity, and continuous professional growth.</p>
+
+            <!-- Mobile Profile Image (shown only on mobile) -->
+            <img src="anup.png" alt="Anup Kattel" class="mobile-profile-img floating">
+            
             <a href="#contact" class="cta-button" style="margin-top: 2rem;">
                 <i class="fas fa-paper-plane"></i> Connect With Me
             </a>
@@ -883,6 +901,7 @@ with a focus on accuracy, integrity, and continuous professional growth.</p>
             </div> 
         </div> 
         <div class="hero-image">
+            <!-- Desktop Profile Image (shown only on desktop) -->
             <img src="anup.png" alt="Anup Kattel" class="profile-img floating">
         </div>
     </section>
