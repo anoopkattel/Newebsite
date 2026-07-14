@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,12 +72,12 @@
             font-size: 1.8rem;
             font-weight: 800;
             color: var(--primary);
-		Margin-bottom: -20px;
+		    Margin-bottom: -20px;
         }
 
         .logo::after {
             content: '';
-            position: absolute;
+            position: relative;
             width: 8px;
             height: 8px;
             background: var(--accent);
@@ -170,6 +171,7 @@
             align-items: center;
             position: relative;
             z-index: 2;
+            transform: translateY(-150px);
         }
 
         .hero h1 {
@@ -416,7 +418,7 @@
         .cta-button {
             display: inline-flex;
             align-items: center;
-            background: linear-gradient(135deg, var(--primary), var(--accent));
+            background: linear-gradient(130deg, var(--primary), var(--accent));
             color: white;
             padding: 15px 35px;
             border-radius: 50px;
@@ -570,6 +572,7 @@
             justify-content: center;
             gap: 1.5rem;
             margin: 2.5rem 0;
+            margin-top: -30px;
         }
 
         .social-links a {
@@ -587,6 +590,7 @@
             overflow: hidden;
             box-shadow: var(--shadow);
             border: 1px solid var(--light-gray);
+            text-decoration: none;
         }
 
         .social-links a:before {
@@ -679,6 +683,8 @@
             text-align: center;
             position: relative;
             overflow: hidden;
+            height: 180px;
+            
         }
 
         footer::before {
@@ -1000,7 +1006,6 @@ with a focus on accuracy, integrity, and continuous professional growth.</p>
     </section>
 
     <footer>
-        
       
         <div class="social-links">
             <a href="https://www.linkedin.com/in/anup-kattel0/"><i class="fab fa-linkedin-in"></i></a>
@@ -1008,7 +1013,7 @@ with a focus on accuracy, integrity, and continuous professional growth.</p>
             <a href="https://www.instagram.com/anoop_kattel/"><i class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/anup.kattel.58"><i class="fab fa-facebook-f"></i></a>
         </div>
-        <p style="margin-top: 3rem; opacity: 0.7;">&copy; 2026 Anup Kattel. All rights reserved.</p>
+        <p style="margin-top: -2px; opacity: 0.7;">&copy; 2026 Anup Kattel. All rights reserved.</p>
     </footer>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
@@ -1129,5 +1134,6 @@ with a focus on accuracy, integrity, and continuous professional growth.</p>
             }
         });
     </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"b4d30e9ab61646cfadacfe3adebe07da","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
