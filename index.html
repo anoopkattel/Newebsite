@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -159,9 +160,8 @@
         }
 
         .hero-content {
-            flex: 1;
-            max-width: 600px;
-            z-index: 2;
+             width:100%;
+            max-width:600px;
         }
 
         .hero-image {
@@ -171,7 +171,8 @@
             align-items: center;
             position: relative;
             z-index: 2;
-            transform: translateY(-150px);
+             transform:none;
+            margin-top:-20rem;
         }
 
         .hero h1 {
@@ -208,7 +209,7 @@
         .hero p {
             margin-bottom: 2rem;
             color: var(--text-light);
-            font-size: 1.1rem;
+            font-size: 17px;
         }
 
         .profile-img {
@@ -733,12 +734,12 @@
         }
 
         /* ACCA Progress */
-        .progress-box {
-        display: flex;
-        gap: 2rem;          
-        align-items: stretch;
-        width: 1000px;
-    }
+        .progress-box{
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+    width: 100%;
+}
 
         .acca-progress {
             background: var(--light);
@@ -747,7 +748,7 @@
             box-shadow: var(--shadow);
             margin-top: 2rem;
             text-align: center;
-            flex:4;
+            flex:3;
             transition: 0.4s ease;
         }
     
@@ -767,7 +768,7 @@
             box-shadow: var(--shadow);
             margin-top: 2rem;
             text-align: center;
-            flex: 6;
+            flex: 7;
             transition: 0.3s ease;
         }
 
@@ -892,6 +893,20 @@
                 margin-top: 15px;
             }
         }
+        .progress-number{
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+
+
+
+
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -948,7 +963,7 @@ with a focus on accuracy, integrity, and continuous professional growth.</p>
             <div  class="acca-achievements">
                 <a style="text-decoration: none;" href="https://instagram.fktm21-1.fna.fbcdn.net/v/t39.30808-6/493053011_1320648526317294_5862005189513810044_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=MzU1MTAzOTAzNTkzODY2MDMyMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Aa65ryccL6wQ7kNvwG5FBqx&_nc_oc=Adp2Tmg8Kr3qeqBquva6rs7ejadg7vQxUF8Kp7gDWPXxawABH8UoKw40lYRIKj_-r2gFoplXOvqWQKwr3KSdqSAl&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fktm21-1.fna&_nc_gid=Q0QCrT_HpLy_EvGRoYJSaA&_nc_ss=7a22e&oh=00_AQAn9Rjtap6B43HUsyX84HewavQ4Yr3ARyHRpXPmdiI91g&oe=6A613677" target="_blank">
                 <div class="progress-text">Achievements</div>
-                <span class="progress-number">. Nepal Rank 3rd</span>
+                <span class="progress-number">Nepal Rank <br>3rd</span>
                 <p style="font-size: 14px;">Scored Nepal Rank 3<sup>rd</sup> in TAX (F6) paper of ACCA in Dec 2024 attempt.</p>
                 </a>
             </div>
@@ -1174,6 +1189,4 @@ with a focus on accuracy, integrity, and continuous professional growth.</p>
             }
         });
     </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"b4d30e9ab61646cfadacfe3adebe07da","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-</body>
 </html>
