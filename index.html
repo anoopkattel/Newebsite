@@ -684,7 +684,6 @@
             position: relative;
             overflow: hidden;
             height: 180px;
-            
         }
 
         footer::before {
@@ -730,10 +729,17 @@
 
         /* Floating elements */
         .floating {
-            animation: float 6s ease-in-out infinite;
+        animation: float 6s ease-in-out infinite;
         }
 
         /* ACCA Progress */
+        .progress-box {
+        display: flex;
+        gap: 2rem;          
+        align-items: stretch;
+        width: 1000px;
+    }
+
         .acca-progress {
             background: var(--light);
             border-radius: var(--border-radius);
@@ -741,6 +747,28 @@
             box-shadow: var(--shadow);
             margin-top: 2rem;
             text-align: center;
+            flex:4;
+            transition: 0.4s ease;
+        }
+    
+         .acca-progress:hover{
+            transform: translateY(-5px);
+         }
+
+         .acca-achievements:hover{
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+         }
+
+        .acca-achievements {
+            background: var(--light);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            margin-top: 2rem;
+            text-align: center;
+            flex: 6;
+            transition: 0.3s ease;
         }
 
         .progress-text {
@@ -907,13 +935,24 @@ with a focus on accuracy, integrity, and continuous professional growth.</p>
                 
 
 
-
-			
+        <div class="progress-box"> 
+			<!--ACCA Progress-->
             <div class="acca-progress">
                 <div class="progress-text">ACCA Progress</div>
                 <span class="progress-number">10/13</span>
-                <p>Papers Completed</p>
+                <p style="font-size: 14px;">Papers Completed</p>
             </div> 
+
+            <!--Achievements-->
+           
+            <div  class="acca-achievements">
+                <a style="text-decoration: none;" href="https://instagram.fktm21-1.fna.fbcdn.net/v/t39.30808-6/493053011_1320648526317294_5862005189513810044_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&_nc_map=urlgen_bucketless&ig_cache_key=MzU1MTAzOTAzNTkzODY2MDMyMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Aa65ryccL6wQ7kNvwG5FBqx&_nc_oc=Adp2Tmg8Kr3qeqBquva6rs7ejadg7vQxUF8Kp7gDWPXxawABH8UoKw40lYRIKj_-r2gFoplXOvqWQKwr3KSdqSAl&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fktm21-1.fna&_nc_gid=Q0QCrT_HpLy_EvGRoYJSaA&_nc_ss=7a22e&oh=00_AQAn9Rjtap6B43HUsyX84HewavQ4Yr3ARyHRpXPmdiI91g&oe=6A613677" target="_blank">
+                <div class="progress-text">Achievements</div>
+                <span class="progress-number">. Nepal Rank 3rd</span>
+                <p style="font-size: 14px;">Scored Nepal Rank 3<sup>rd</sup> in TAX (F6) paper of ACCA in Dec 2024 attempt.</p>
+                </a>
+            </div>
+        </div>
         </div> 
         <div class="hero-image">
             <!-- Desktop Profile Image (shown only on desktop) -->
@@ -963,11 +1002,11 @@ with a focus on accuracy, integrity, and continuous professional growth.</p>
         <div class="timeline">
             <div class="timeline-item visible">
                 <div class="timeline-content">
-                    <div class="timeline-date">June 2024 - September 2024</div>
-                    <div class="timeline-duration" id="internDuration"></div>
-                    <h3 class="timeline-title">Accounting Intern</h3>
-                    <p>Arun Securities Pvt. Ltd, Kathmandu</p>
-                    <ul style="margin-top: 1rem; padding-left: 1.2rem;">
+                    <div class="timeline-date" style="font-size: 15px;">June 2024 - September 2024</div>
+                    <div class="timeline-duration" id="internDuration" style="font-size: 11px;"></div>
+                    <h3 class="timeline-title" style="font-size: 20px;">Accounting Intern</h3>
+                    <p style="font-size: 15px;">Arun Securities Pvt. Ltd, Kathmandu</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.2rem; font-size: 14px;" >
                         <li>Gained practical experience in accounting operations.</li>
                         <li>Client ledger maintainance and client relations.</li>
                     </ul>
@@ -975,11 +1014,11 @@ with a focus on accuracy, integrity, and continuous professional growth.</p>
             </div>
             <div class="timeline-item visible">
                 <div class="timeline-content">
-                    <div class="timeline-date">October 2024 - Present</div>
-                    <div class="timeline-duration" id="officerDuration"></div>
-                    <h3 class="timeline-title">Accounts Officer</h3>
-                    <p>Arun Securities Pvt. Ltd, Kathmandu</p>
-                    <ul style="margin-top: 1rem; padding-left: 1.2rem;">
+                    <div class="timeline-date" style="font-size: 15px;">October 2024 - Present</div>
+                    <div class="timeline-duration" id="officerDuration" style="font-size: 11px;"></div>
+                    <h3 class="timeline-title" style="font-size: 20px;">Accounts Officer</h3>
+                    <p style="font-size: 15px;">Arun Securities Pvt. Ltd, Kathmandu</p>
+                    <ul style="margin-top: 1rem; padding-left: 1.2rem; font-size: 14px;">
                         <li>Bookkeeping and bank reconciliations.</li>
                         <li>Threshold Transaction Report (TTR) reporting for AML/CFT compliance.</li>
                         <li>Co-ordination with external auditors and other stateholders.</li>
