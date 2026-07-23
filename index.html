@@ -31,6 +31,16 @@
             background-color: #ED1C24;
             color: white;
         }
+        #typing::after {
+        content: " ";
+        animation: blink .8s infinite;
+        }
+
+    @keyframes blink {
+    50% {
+        opacity: 0;
+    }
+    }
 
         * {
             margin: 0;
@@ -934,7 +944,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>ACCA</h1> 
-		<h2> Student<br>& Accounting aspirant</h2>
+		<h2 id="typing"></h2>
             
             <p>As an Accounts Officer at a stock brokerage firm, I manage a broad range of financial operations, 
 including client ledger maintenance, bookkeeping, accounts payable and receivable, bank reconciliations, and vendor settlements. 
@@ -1223,6 +1233,28 @@ with a focus on accuracy, integrity, and continuous professional growth.</p>
 
     observer.observe(counter);
 });
+
+        const text = "Student\n& Accounting Aspirant";
+
+const typing = document.getElementById("typing");
+
+let i = 0;
+
+function type() {
+    if (i < text.length) {
+
+        if (text.charAt(i) === "\n") {
+            typing.innerHTML += "<br>";
+        } else {
+            typing.innerHTML += text.charAt(i);
+        }
+
+        i++;
+        setTimeout(type, 40);
+    }
+}
+
+type();
     </script>
     </body>
 </html>
