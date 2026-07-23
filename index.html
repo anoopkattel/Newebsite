@@ -6,8 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anup Kattel | ACCA Finalist</title>
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <title>Anup Kattel | ACCA Professional</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -26,6 +25,11 @@
             --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        ::selection {
+            background-color: #ED1C24;
+            color: white;
         }
 
         * {
@@ -956,7 +960,7 @@ with a focus on accuracy, integrity, and continuous professional growth.</p>
 			<!--ACCA Progress-->
             <div class="acca-progress">
                 <div class="progress-text">ACCA Progress</div>
-                <span class="progress-number">10/13</span>
+                <span class="progress-number" data-target="10">0/13</span>
                 <p style="font-size: 14px;">Papers Completed</p>
             </div> 
 
@@ -1189,6 +1193,36 @@ with a focus on accuracy, integrity, and continuous professional growth.</p>
                 navLinks.classList.remove('active');
                 menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
             }
+        }); 
+
+      document.addEventListener("DOMContentLoaded", () => {
+    const counter = document.querySelector(".progress-number");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+
+                let current = 0;
+                const target = Number(counter.dataset.target);
+
+                function updateCounter() {
+                    if (current <= target) {
+                        counter.textContent = `${current}/13`;
+                        current++;
+                        setTimeout(updateCounter, 100);
+                    }
+                }
+
+                updateCounter();
+                observer.unobserve(counter);
+            }
         });
+    }, {
+        threshold: 0.1 // Starts when 20% of the element is visible
+    });
+
+    observer.observe(counter);
+});
     </script>
+    </body>
 </html>
